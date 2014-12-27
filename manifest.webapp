@@ -1,0 +1,27 @@
+{
+  "version": "0.1",
+  "name": "SecretShare",
+  "description": "Share your secrets - Safe and Secure",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/icons/secret_16x16.png",
+    "32": "/icons/secret_32x32.png",
+    "48": "/icons/secret_48x48.png",
+    "64": "/icons/secret_64x64.png",
+    "128": "/icons/secret_128x128.png"
+  },
+  "developer": {
+    "name": "Dwaraka Nath",
+    "url": "http://www.dwarak.in"
+  },
+  "installs_allowed_from": ["*"],
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": {
+      "description": "Allows loading remote content"
+    },
+    "storage" : {
+      "description": "Allows storage utilization"
+    }
+  }
+}

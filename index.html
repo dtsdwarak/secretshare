@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>SecretShare</title>
+    <meta name="description" content="Hidden menu options triggered by the menu button in the header">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS -->
+    <link rel="stylesheet" href="style/headers.css">
+    <link rel="stylesheet" href="style/drawer.css">
+    <link rel="stylesheet" href="style/buttons.css">
+    <link rel="stylesheet" href="style/input_areas.css">
+    <link href="style/progress_activity.css" rel="stylesheet" type="text/css">
+    <link href="style/app.css" rel="stylesheet" type="text/css">
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.2.min.js" type="text/JavaScript"></script>
+
+
+  </head>
+
+  <body role="application">
+
+    <!-- Sidebar -->
+    <section data-type="sidebar">
+      <header>
+        <menu type="toolbar">
+          <a href="#"></a>
+        </menu>
+        <h1>Options</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Secret</a></li>
+          <li><a href="credentials.html">Credentials</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Content inside the screen -->
+    <section id="drawer" role="region">
+      
+      <!-- Header -->
+      <header>
+        <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+        <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+        <h1>SecretShare</h1>
+      </header>    
+
+      <!-- Body -->
+      <div role="main">
+
+        <!-- Working Area of the application -->
+        <article id="actual_area">
+          <div id="workingArea">
+              <input type="text" id="your_secret" class="input_text" placeholder="message">
+              <input type="text" id="your_password" class="input_text" placeholder="password">
+              <textarea id="secret_url" readonly></textarea>
+              <div id="button_link">
+                  <button id="generate_secret">Get Link</button>
+                  <button id="email_link">Send</button>
+              </div>
+          </div>
+        </article>
+
+        <!-- Loading animation -->
+        <article id="loadingDiv">
+          <form role="dialog" data-type="confirm">
+            <div>
+              <h1>Fetching URL. <br/>Please wait</h1>
+                <p><progress></progress></p>
+            </div>
+            <menu role=""><button class="full">Cancel</button></menu>
+          </form>
+        </article>
+
+      </div>
+    </section>
+
+  <!-- JavaScript -->
+  <script src="js/secret.js" type="text/JavaScript"></script> 
+
+  </body>
+</html>
