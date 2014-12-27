@@ -6,3 +6,13 @@ Firefox OS App for sharing secrets with your friends.
 ##Uses...
 * HTML/CSS/JavaScript
 * OneTimeSecret API
+* IndexedDB to store the API credentials
+
+##Screenshots
+
+![Main Page](screenshots/1.png "Main Page Title") <br/>
+![OTS Credentials Screen](screenshots/2.png "OTS Key")<br/>
+![About Page](screenshots/3.png "About")<br/>
+![Generated URL](screenshots/4.png "URL")<br/>
+
+***
