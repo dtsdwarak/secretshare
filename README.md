@@ -15,4 +15,6 @@ Firefox OS App for sharing secrets with your friends.
 ![About Page](screenshots/3.png "About")<br/>
 ![Generated URL](screenshots/4.png "URL")<br/>
 
+#Download
+Download the app for Firefox OS from the Marketplace now - [SecretShare Page](https://marketplace.firefox.com/app/secretshare)
 ***
