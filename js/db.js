@@ -69,11 +69,16 @@ $(document).ready(function(){
 		var store = transaction.objectStore("ots");
 		store.clear();
 		var request = store.put(value);
-		request.onsuccess = function(e){
-			alert("Save Success");
-		};
-		request.onerror = function(e){
-			alert("Error: "+e.value);
+		if(!ots_key || !email_address){
+			alert('Check your credentials again, please.');
+		}
+		else{
+			request.onsuccess = function(e){
+				alert("Save Success. Just make sure you got your keys correct.");
+			};
+			request.onerror = function(e){
+				alert("Error: "+e.value);
+			}
 		}
 	});
 

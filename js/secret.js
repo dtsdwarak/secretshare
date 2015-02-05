@@ -59,8 +59,9 @@ function getSecret(){
     else if (!password){
         alert('Your secret will be created without a password.');
     }
-    else if (!email || !ots){
+    if (!email || !ots){
         alert('No proper OTS Email and Key has been given. Make sure they are input');
+        return;
     }
     $.ajax({
         type: "POST",
